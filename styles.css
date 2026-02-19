@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+/* ============================================
+   Page layout
+   ============================================ */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/* Horizontal row of pricing cards; 24px gap */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +27,10 @@ body {
     align-items: flex-start;
 }
 
+/* ============================================
+   Card structure
+   ============================================ */
+/* Single pricing card; fixed width, min height for alignment */
 .card {
     display: flex;
     flex-direction: column;
@@ -39,6 +47,9 @@ body {
     flex-direction: column;
 }
 
+/* ============================================
+   Card typography & content
+   ============================================ */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +58,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row: amount + optional period (e.g. /mo.) */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -69,6 +81,7 @@ body {
     margin-bottom: 32px;
 }
 
+/* “Includes:” / “Everything in Hobby, plus:” */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark (✓) before each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,10 @@ body {
     font-weight: 400;
 }
 
+/* ============================================
+   Buttons
+   ============================================ */
+/* Base: secondary style; sits at bottom of card (margin-top: auto) */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +135,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary CTA: dark background (e.g. “Get Pro”) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -130,6 +149,9 @@ body {
     background-color: #333;
 }
 
+/* ============================================
+   Page label (fixed badge)
+   ============================================ */
 .page-label {
     position: fixed;
     top: 16px;
