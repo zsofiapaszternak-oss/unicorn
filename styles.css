@@ -149,6 +149,20 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #cc210e
+}
+
+.download-button.tertiary:hover {
+    background-color: #D8D6CE;
+}
+
+.download-button.tertiary:active {
+    background-color: #D8D6CE;
+}
+
 /* ============================================
    Page label (fixed badge)
    ============================================ */
